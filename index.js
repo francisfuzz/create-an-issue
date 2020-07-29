@@ -20,6 +20,9 @@ Toolkit.run(async tools => {
     env: process.env,
     date: Date.now()
   }
+  
+  // Inspect process.env
+  tools.log.debug('Inspect process.env', process.env)
 
   // Get the file
   tools.log.debug('Reading from file', template)
